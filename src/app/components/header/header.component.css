@@ -1,0 +1,16 @@
+header {
+    background-color: #595F39;
+    color: white;
+
+    padding: 1.3rem;
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+}
