@@ -1,0 +1,28 @@
+section {
+    border-right: 1px solid #3f3f3f;
+    height: 90vh;
+    width: 14rem;
+}
+
+.sideMenuOptionsContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    text-decoration: none;
+
+    padding: 1.5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+a:hover{
+    background-color: #C4C5BA;
+}
+
+p {
+    padding: 2rem 1.5rem;
+    font-size: 1.2rem;
+}

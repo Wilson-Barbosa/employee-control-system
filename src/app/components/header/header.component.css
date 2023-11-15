@@ -2,7 +2,7 @@ header {
     background-color: #595F39;
     color: white;
 
-    padding: 1.3rem;
+    padding: 1.4rem;
 
 
 
@@ -13,4 +13,8 @@ header {
 
     position: sticky;
     top: 0;
+}
+
+p {
+    font-size: 2rem;
 }
