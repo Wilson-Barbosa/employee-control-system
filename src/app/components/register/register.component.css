@@ -1,3 +1,10 @@
+section {
+    position: absolute;
+
+    padding-top: 2rem;
+    margin-left: 21rem;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -29,6 +36,7 @@ input:focus, select:focus{
 button {
     background-color: #28A745;
     color: #FFFFFF;
+    box-shadow: 5px 5px 5px gray;
 
     font-size: 1rem;
     height: 2.2rem;
@@ -41,12 +49,16 @@ button {
     margin-top: 1.6rem;
 }
 
-button:hover{
-    box-shadow: 5px 5px 5px gray;
+button:active{
+    background-color: #2a773c;
 }
 
 .inputBox {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
+}
+
+.colorBlue {
+    background-color: blue;
 }

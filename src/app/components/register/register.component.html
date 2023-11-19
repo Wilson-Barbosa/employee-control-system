@@ -1,24 +1,24 @@
 <section>
     <p>Register an Employee</p>
 
-    <form>
+    <form [formGroup]="registerForm" (ngSubmit)="saveEmployee()">
         <div class="container">
             <!-- First Name -->
             <div class="inputBox">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName">
+                <input type="text" id="firstName" name="firstName" formControlName="firstName">
             </div>
 
             <!-- First Name -->
             <div class="inputBox">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName">
+                <input type="text" id="lastName" name="lastName" formControlName="lastName">
             </div>
 
             <!-- Department -->
             <div class="inputBox">
                 <label for="departmentSelect">Department:</label>
-                <select name="department" id="departmentSelect">
+                <select id="departmentSelect" name="department" formControlName="department">
                     <option value="">Select a department</option>
                     <option value="humanResources">Human Resources</option>
                     <option value="finances">Finances</option>
@@ -31,12 +31,12 @@
         <div class="container">
             <div class="inputBox">
                 <label for="email">Email:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" formControlName="email">
             </div>
 
             <div class="inputBox">
                 <label for="genderSelect">Gender:</label>
-                <select name="gender" id="genderSelect">
+                <select id="genderSelect" name="gender" formControlName="gender">
                     <option value="">Select an Option</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -45,6 +45,8 @@
             </div>
         </div>
 
-        <button type="button">Search</button>
+        <button type="submit" [disabled]="!registerForm.valid">Register</button>
     </form>
 </section>
+
+
